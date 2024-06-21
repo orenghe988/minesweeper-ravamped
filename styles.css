@@ -134,6 +134,10 @@ h2 {
   background-color: #d7dde3;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+}
+
 .btn.btn-pri {
   background-color: black;
   color: white;
@@ -1022,8 +1026,7 @@ kbd {
 
 @media (max-width: 550px) {
   #help-icon {
-    height: 40px;
-    width: 40px;
+    display: none;
   }
 }
 
