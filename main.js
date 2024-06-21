@@ -6,7 +6,6 @@
 // TODO add unstable mines mode
 // TODO add custom board sizes
 // TODO add stats page
-// TODO write help dialog
 // TODO better mine explosions and implosions
 // TODO add confirmation query on #go-back-btn, #restart-game-btn
 

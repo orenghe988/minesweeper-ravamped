@@ -85,18 +85,28 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 15px;
-  margin: 0 26px;
+  margin: 10px 26px 0 26px;
 }
 
-@media (max-width: 550px) {
-  #app {
+@media (min-width: 550px) and (min-height: 550px) {
+  #mobile-unfit {
     display: none;
   }
 }
 
-@media (min-width: 550px) {
-  #mobile-unfit {
+@media (max-width: 550px) or (max-height: 550px) {
+  #app {
     display: none;
+  }
+  #help-icon {
+    height: 30px !important;
+    width: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .minesweeper-game-imaage {
+    display: none !important;
   }
 }
 
@@ -1024,14 +1034,30 @@ kbd {
   z-index: 999;
 }
 
-@media (max-width: 550px) {
-  #help-icon {
-    display: none;
-  }
+#help-modal {
+  max-width: min(70vw, 800px);
 }
 
 #help-modal-content {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 5px 25px;
+}
+
+.minesweeper-game-imaage {
+  width: 240px;
+  height: 240px;
+  display: inline-block;
+  float: right;
+  border-radius: 5px;
+  margin: 0 0 0 30px;
+}
+
+#help-modal-content > p {
+  width: 100%;
+  font-size: 14pt;
+  line-height: 1.75;
 }
