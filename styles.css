@@ -99,14 +99,16 @@ body {
     display: none;
   }
   #help-icon {
+    display: none;
+  }
+  #github-link {
     height: 30px !important;
     width: 30px !important;
+    margin: 15px !important;
   }
-}
-
-@media (max-width: 768px) {
-  .minesweeper-game-imaage {
-    display: none !important;
+  #github-link img {
+    height: 30px !important;
+    width: 30px !important;
   }
 }
 
@@ -1023,15 +1025,32 @@ kbd {
 
 /* <- .modal */
 
+#github-link,
 #help-icon {
   position: fixed;
-  right: 0;
-  bottom: 0;
   margin: 20px;
   height: 50px;
   width: 50px;
-  cursor: pointer;
   z-index: 999;
+}
+
+#help-icon {
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#github-link {
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#github-link img {
+  height: 50px;
+  width: 50px;
 }
 
 #help-modal {
