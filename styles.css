@@ -82,9 +82,9 @@ body {
 .computer-icons-container {
   height: 90px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 15px 65px;
   margin: 10px 26px 0 26px;
 }
 
