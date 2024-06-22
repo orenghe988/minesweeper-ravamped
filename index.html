@@ -96,7 +96,7 @@
                      </div>
                      <hr>
                      <div class="instruction" id="flag-instruction">
-                        <p><span class="gradient-text">Flag - </span><kbd>Right Click</kbd></p>
+                        <p><span class="gradient-text">Toggle flag - </span><kbd>Right Click</kbd></p>
                      </div>
                      <hr>
                      <div class="instruction" id="fence-instruction">
@@ -117,20 +117,20 @@
             <h1>Help</h1>
             <p>
                <img class="minesweeper-game-imaage" src="images/minesweeper-game.png" />
-               Minesweeper is a game where mines are hidden behind a set amount of squares in a grid.<br>
+               Minesweeper is a game where mines are hidden behind a known amount of squares in a grid.<br>
                Some squares are empty, while others have mines behind them.<br>
                Every square in the grid can be stepped on, revealing what lies behind it.<br>
                <br>
                <b>The goal of the game</b> is to reveal all squares that do not have mines behind them.<br>
-               If the player steps on a square with a mine behind it, they would <b>lose the game</b>.<br>
+               If a square with a mine behind it is stepped on, <b>the game is lost</b>.<br>
                <br>
-               To help the player, squares that don't have mines behind them, but are 'touching' squares that do (directly adjacent vertically, horizontally, or diagonally), will show a number behind them (only when stepped on).<br>
-               The number (1 - 8), indicates the exact amount of bomb squares that touch this square.<br>
+               Squares that don't have mines behind them, but are 'touching' squares that do (directly adjacent vertically, horizontally, or diagonally), show a number behind them when stepped on.<br>
+               The number (1 - 8), indicates the <i>exact</i> amount of mine squares that touch this square.<br>
+               When unnumbered squares are stepped on, all eight squares that touch them are stepped on automatically.<br>
                <br>
-               If the player has come to a decision that a bomb lies behind a certain square, they should <b>flag it by right-clicking on the square</b>. Flagging the square would prevent it from being stepped on, and decrement the remaining bombs counter by 1.<br>
-               It's important to know, that flags can also be placed on empty squares, while also preventing them from being stepped on, and decrementing the remaining bombs counter by 1.<br>
+               <b>Flags</b> can be placed on any square (and also removed) by right-clicking on it, marking it as possibly dangerous and preventing it from being stepped on in the future.<br>
+               There are only as much flags as there are mined squares on the board. The amount of available flags is displayed on a counter at the top-left corner of the board.<br>
                <br>
-               In their first moves, the player should try to <b>step on a square that is both safe and not touching any unsafe squares</b>. This would open even more squares around it, giving the player more info about bombs around.<br>
             </p>
             <h2>Good luck!</h2>
          </div>
