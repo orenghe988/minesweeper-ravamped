@@ -232,7 +232,7 @@
       difficulty,
       mineAmount,
       boardNSquares,
-      fencesModeToggle,
+      fencesModeToggle: true,
       unstableMinesModeToggle,
     };
   }

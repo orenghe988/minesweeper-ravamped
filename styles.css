@@ -498,7 +498,7 @@ kbd {
   top: 1.25px;
 }
 
-.lower-bar > .instructions-container {
+.instructions-container {
   width: min(100%, 550px);
   height: 100%;
   display: flex;
@@ -510,7 +510,7 @@ kbd {
   transition: 0.4s opacity;
 }
 
-.lower-bar > .instructions-container > hr {
+.instructions-container > hr {
   margin: 0;
   height: 1.75em;
   width: 1.5px;
@@ -520,10 +520,6 @@ kbd {
 }
 
 .instructions-container > hr {
-  display: none;
-}
-
-.instructions-container.with-fences > hr {
   display: none;
 }
 
@@ -586,7 +582,7 @@ kbd {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.1s background-color ease-in-out, 0.1s box-shadow ease-in-out;
+  transition: 0.075s background-color ease, 0.075s box-shadow ease;
 }
 
 #board.gameboard > .square:not(.pressed) {
@@ -596,6 +592,7 @@ kbd {
 #board.gameboard > .square:active {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05), 0 0 0 0 rgb(0 0 0 / 0.1),
     inset 0 0 0 0 rgb(0 0 0 / 0.1);
+  background-color: #fbfbfb;
 }
 
 #board.gameboard > .square.pressed {
