@@ -3,6 +3,7 @@
 <img src="https://github.com/orenghe988/minesweeper-revamped/blob/main/images/minesweeper.png?raw=true" alt="Minesweeper start screen" width="550" />
 
 ### ❗IMPORTANT: This started as a school project where not using any external libraries was a requirement
+#### Hence, descriptions were hand-written for every method not taught at school.
 
 ### This project will be reworked to take advantage of modern libraries
 
